@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dash.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li>Stopwatch</li>
+        <li>Quizzes</li>
+        <li>Flashcards</li> <!-- ✅ Flashcards added here -->
+        <li>Rewards</li>
+        <li>Progress Bar</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <div class="header">
+        <button class="top-button">Notifications</button>
+        <button class="top-button">News</button>
+        <button class="top-button">Courses</button>
+      </div>
+
+      <div class="news-bar">
+        <marquee direction="left" scrollamount="6">
+          Complete your courses before 18th April, 2025. &nbsp;&nbsp;&nbsp; 
+          New courses coming out on 1st May, 2025.
+        </marquee>
+      </div>
+    </div>
+
+    <!-- Right Sidebar (Profile) -->
+    <div class="rightbar">
+      <h3>Student Profile</h3>
+      <p><strong>Name:</strong> Jain Khushi Sanjay</p>
+      <p><strong>Registration No.:</strong> 23FE10CDS00369</p>
+      <p><strong>Rank:</strong> 1</p>
+      <p><strong>Courses Completed:</strong> 10</p>
+      <button class="logout-button" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script>
+    function logout() {
+      // Turn the page baby pink
+      document.body.style.backgroundColor = "#ffcce6";
+      // Remove everything else from the page
+      document.body.innerHTML = "<h1 style='color:white; text-align:center; margin-top:20%;'>You have been logged out.</h1>";
+    }
+  </script>
+</body>
+</html>
